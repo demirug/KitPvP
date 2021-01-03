@@ -1,0 +1,9 @@
+name: KitPvP
+main: ua.demirug.kitpvp.KitPvP
+author: _Demirug_
+version: 1.0
+commands:
+    setup:
+    leave:
+    balance:
+        aliases: [bal, money, valute]

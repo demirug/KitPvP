@@ -1,0 +1,148 @@
+#==================================
+#          KitPvP v1.0
+#   Разработано командой X-Mongers
+#     https://vk.com/xmongers
+#==================================
+setup: true
+#Настройки координат выполняется командой /setup необходимо право kitpvp.setup
+#При установке 'setup: false' команда /setup становится нерабочей и игра  загружается
+lobby: {}
+give-kit-y: 0
+emeralds: []
+exit-server: 'Survival'
+kill-reward: 10
+#Награда за убийство
+bow-restore: 3
+#Куллдаун на лук
+emerald-spawn: 10
+#Каждый сколько секунд будет спавнится эмерельд
+1-heal-regen: 5
+#Каждые сколько секунд регенирируется 1 XP (у игрока 20 XP по стандарту)
+emerald-reward: 100
+#Награда за поднятый эмереальд
+archer-armor-protect-level: 2
+#Уровень брони лучника (+1)
+archer-bow-enchants:
+    48: 2
+    49: 1
+#Зачарования лука ТОЛЬКО ID: LEVEL
+warrior-sword-enchants:
+    16: 1
+ #Зачарования меча воина ТОЛЬКО ID: LEVEL
+ninja-sword-enchants:
+    19: 1 
+    20: 1
+#Зачарования меча ниндзя ТОЛЬКО ID: LEVEL
+archer-sword-enchants:
+    19: 2   
+#Зачарования меча ниндзя ТОЛЬКО ID: LEVEL
+warrior-doublejump-cost: 1350
+#Стоимость улучшения двойного прыжка воина
+warrior-doublejump-vector: 1.0
+warrior-doublejump-restore: 3
+#Время для востоновления двойного прыжка в секундах
+warrior-horse-cost: 2350
+#Стоимость улучшения Лошадь
+warrior-horse-alive: 30
+warrior-horse-restore: 10
+#Время для востоновления лошади в секундах
+warrior-apple-cost: 3650
+#Стоимость улучшения Яблоко
+warrior-apple-skin: '_Demirug_'
+#Скин на яблоке
+warrior-max-apples: 3
+#Кол-во яблок от 1 до 7
+warrior-apple-heal: 20
+#Сколько хилит яблоко
+archer-kit-cost: 2000
+#Стоимость кита Лучник
+archer-doublejump-cost: 1350
+#Стоимость улучшения двойного прыжка лучника
+archer-doublejump-vector: 1.5
+archer-doublejump-restore: 3
+#Время востоновления для следующего выстрела в секундах
+archer-headshot-cost: 1550
+#Стоимость улучшения хедшота лучника
+archer-headshot-damage: 10
+#Урон от попадания в голову стрелой
+ninja-kit-cost: 5000
+#Стоимость кита Ниндзя
+ninja-hook-cost: 2420
+#Стоимость улучшения крюка для ниндзя
+ninja-hook-restore: 5
+#Время для востоновления крюка в секундах
+ninja-armor-cost:
+    1: 1200
+    2: 1700
+    3: 3700
+#Стоимость уровней брони у ниндзя (1-3)
+scoreboard:
+    top-format: '%1$s: &c%2$s'
+    top-title: '&e&lKill Top'
+    title: '&e&lKitPvP'
+    body:
+        - ''
+        - '&fВаш кит:&c %1$s'
+        - '&fУбийств:&c %2$s'
+        - '&fСмертей:&c %3$s'
+        - '&fБаланс:&c %4$s'
+        - ''
+        - '&e&owww.testServer.ru'
+lores:
+    cost:
+        - ' '
+        - '&a> &fСтоимость &c%1$s'
+    click-to-select:
+        - ''
+        - '&a> &fНажмите для выбора'
+    skills-open:
+        - ''
+        - '&a> &fНажмите для просмотра улудшений для кита %1$s'
+    warrior-kit:
+        - 'Стандартный класс'
+        - 'Медленный в передвижении'
+        - 'Смертаносный при столкновении'
+    warrior-doublejump:
+        - 'Возможность прыгать выше'
+        - 'При двойном клике пробелом'
+    warrior-horse:
+        - 'Возможность вызвать лошадь'
+        - 'При двойном клике пробелом'
+    warrior-apples:
+        - 'При убийстве игрока'
+        - 'Вы получаете его голову'
+        - 'При поедании которой'
+        - 'Ваши XP востанавливаются'
+    archer-kit:
+        - 'При себе имеет лук и стрелы'
+        - 'Хороший для дальних мощных атак'
+    archer-doublejump:
+        - 'Возможность прыгать выше'
+        - 'При двойном клике пробелом'
+    archer-headshot:
+        - 'Врагу наносится дополнительный урон'
+        - 'При попадании в голову'
+    ninja-kit:
+        - 'Идеальный кит для'
+        - 'Создания быстрых смертаносных атак'
+    ninja-hook:
+        - 'При попадении снежком во врага'
+        - 'Он притянется к вам'
+    ninja-armor-upgrade:
+        - 'Улучшайте броню для своей безопасности'
+messages:
+    exit: '&6KitPvP &7> &fВыходим с сервера...'
+    kit-buy: '&6KitPvP &7> &fВы купили кит &b%1$s'
+    kit-selected: '&6KitPvP &7> &fВы выбрали кит &b%1$s'
+    ninja-armor-upgraded: '&6KitPvP &7> &fВы улудшили броню до &c%1$s &fуровня'
+    skill-buy: '&6KitPvP &7> &fВы купили способность &b%1$s'
+    skill-selected: '&6KitPvP &7> §fВы выбрали способность &b%1$s'
+    not-enough-money: '&6KitPvP &7> &fУ вас недостаточно денег'
+    kit-not-available: '&6KitPvP &7> &cДанный кит недоступен вам'
+    toGame: '&6KitPvP &7> &fВы попали на арену'
+    suicide: '&6KitPvP &7> &fИгрок &c%1$s&f убил сам себя'
+    kill: '&6KitPvP &7> &fИгрок &c%1$s&f убит игроком &c%2$s'
+    kill_reward: '&6KitPvP &7> &fВы убили игока &c%1$s&f и награждены &c%2$s&f монет'
+    balance: '&6KitPvP &7> &fУ вас на счету &c%1$s&f$'
+    wait: '&6KitPvP &7> &fОжидайте &c%1$s &fсекунд перед повторным использованием'
+    emerald-reward: '&6KitPvP &7> &fВы подобрали &c%1$s &fмонет'
